@@ -1,0 +1,15 @@
+.header {
+  width: 80rem;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 0;
+  font-size: 1.25rem;
+  font-weight: 200;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+}

@@ -9,13 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.0.1",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
+    "geolib": "^3.3.3",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "@types/node": "18.11.7",
     "@types/react": "18.0.24",
     "@types/react-dom": "18.0.8",

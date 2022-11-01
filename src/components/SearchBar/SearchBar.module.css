@@ -1,0 +1,25 @@
+.searchBar {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  font-weight: 200;
+  border-bottom: 1.5px solid #9A9A9A;
+}
+
+.searchBarInput {
+  flex: 1;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.searchBarInput::placeholder {
+  color: #9A9A9A
+}
+
+.searchBarInput:focus {
+  outline: none;
+}
