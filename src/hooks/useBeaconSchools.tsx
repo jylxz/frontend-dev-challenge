@@ -9,10 +9,10 @@ export default function useBeaconSchools(BeaconSchools: BeaconSchools) {
     useState<GeolocationCoordinates | null>();
 
   useEffect(() => {
-    _sort();
+    sort();
   }, [BeaconSchools, geolocation, setGeolocation]);
   
-  function _sort() {
+  function sort() {
     switch (true) {
       case isGeolocation(geolocation):
         const closestSchools = sortSchoolsByGeolocation(
@@ -34,7 +34,7 @@ export default function useBeaconSchools(BeaconSchools: BeaconSchools) {
 
   function search(schoolName: string) {
     if (schoolName === "") {
-      _sort();
+      sort();
     } else {
       const filteredSchools = BeaconSchools.schools.filter((school) =>
         school.name.toLowerCase().includes(schoolName.toLowerCase())

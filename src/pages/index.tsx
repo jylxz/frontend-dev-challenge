@@ -36,11 +36,11 @@ export default function Home({ schools }: { schools: BeaconSchools }) {
   return (
     <div className={`${styles.app} ${poppins.className}`}>
       <Header />
-      <div className={styles.main}>
+      <main className={styles.main}>
         <h1 className={styles.mainHeading}>Pick Your School</h1>
         <SearchBar search={search} />
         <SchoolList beaconSchools={results} />
-      </div>
+      </main>
     </div>
   );
 }
