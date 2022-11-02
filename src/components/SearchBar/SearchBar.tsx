@@ -10,7 +10,13 @@ export default function SearchBar({
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    search(input);
+    const debounce = setTimeout(() => {
+      search(input);
+    }, 500);
+
+    return () => {
+      clearInterval(debounce);
+    };
   }, [input]);
 
   return (
